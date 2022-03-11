@@ -1,0 +1,15 @@
+/* Base 스타일 작성 */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

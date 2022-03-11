@@ -1,0 +1,108 @@
+/* CSS 작성 *//* Theme 스타일 작성 */
+.container {
+    margin-top: 100px;
+}
+
+.logo {
+    width: 176px;
+    height: 40px;
+    margin-bottom: 48px;
+}
+
+.sub-title {
+    font-size: 16px;
+    color: var(--color-grey-600);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+    text-align: center;
+}
+
+.v-bar {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.prd-img-sec {
+    width: 1020px;
+    height: 958px;
+}
+
+.prd {
+    position: relative;
+    float: left;
+    border: 1px solid var(--color-grey-500);
+    height: 310px;
+    margin: 0 16px 16px 0;
+}
+
+.prd:nth-child(2),
+.prd:nth-child(6),
+.prd:nth-child(9) {
+    margin-right: 0;
+}
+
+.prd:nth-child(1),
+.prd:nth-child(2),
+.prd:nth-child(7) {
+    width: 502px;
+    padding: 20px 28px;
+}
+
+.prd:nth-child(3),
+.prd:nth-child(4),
+.prd:nth-child(5),
+.prd:nth-child(6),
+.prd:nth-child(8),
+.prd:nth-child(9) {
+    width: 243px;
+    padding: 14px 22px 14px 21px;
+}
+
+.btn {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background: var(--color-black-20);
+    border: none;
+    width: 42px;
+    height: 42px;
+    transition: all 0.1s;
+}
+
+.btn > img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 42px;
+    width: 42px;
+}
+
+.prd:hover, .prd:focus {
+    outline: none !important;
+    border-color: var(--color-blue-600);
+}
+
+.prd:hover .btn, .prd:focus .btn {
+    background: var(--color-blue-600);
+    width: 112px;
+    transition: all 0.1s;
+}
+
+.prd:hover .btn::before, .prd:focus .btn::before {
+    content: "구매하기";
+    color: var(--color-white);
+    position: absolute;
+    top: 12px;
+    bottom: 13px;
+    left: 20px;
+    font-size: 14px;
+}
